@@ -76,6 +76,10 @@ body{
   font-size: medium;
 }
 
+.contents1{
+  padding-top:5vw;
+}
+
 .contents1-title{
   margin:5px auto;
   width:45vw;
@@ -153,14 +157,16 @@ body{
 
 .pattern-container{
   background-color: #B1B1B1;
-  height:30vw;
   
+}
+
+.patterntitle{
+  width:23vw;
 }
 
 .pattern-container img,.pattern-container p{
   width: 80%;
   margin: auto;
-  font-size: 90%;
 }
 
 .patterntext {
@@ -194,10 +200,10 @@ body{
 
 .linkbtn {
   display: flex!important;
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
 .linkbtn img {
-  margin: 12px auto;
+  margin: 20px 10px;
 }
