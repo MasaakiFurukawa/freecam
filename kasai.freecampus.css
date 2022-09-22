@@ -1,0 +1,289 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+div{
+    animation-name:fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+body{
+    width: 100%;
+    background-color: #D0AF8E;
+    font-family: 'Shippori Mincho', serif;
+}
+
+img{
+    width: 100%;
+}
+
+
+.pc { display: block !important; 
+width:100%;}
+.sp { display: none !important; }
+    
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; 
+        max-width: 100%;
+        align-items: center;
+        margin-left: 0% !important;
+        width: 100% !important; }   
+    .float-btn,.quote-btn {
+        margin: 30px 0;
+    }
+    .float-btn img,.quote-btn img{
+        width: 75% !important;
+        margin: auto !important;
+    }
+}
+
+
+.pc-top-text{*}
+
+.sp-top-text {
+    background-image: url(http://kasai.freecampus.co.jp/lp3/images/2-1sp.png);
+    background-size: cover;
+    height:255px;
+    margin:30px 0;
+}
+
+.sp-top-text p{
+    color:white;
+    width: 45%;
+    right: 10px;
+    padding: 15% 0% 0% 50%;
+    font-size: 15px;
+}
+
+.quote-btn {
+    margin: 30px 0;
+}
+
+.sp-question{
+    background-image: url(http://kasai.freecampus.co.jp/lp3/images/2-2sp.png);
+    background-size: cover;
+    height: 399px;
+}
+
+.sp-question-text{
+    width: 60%;
+    padding: 13% 0% 0% 41%;
+}
+
+.sp-question-text h2{
+    font-size: 4.2vw;
+    color: #5F6332;
+    margin: 7px 0;
+    line-height: 2.1em;
+
+}
+
+.sp-question-text p{
+    font-size: 14px;
+    color: #492C18;
+}
+
+.sp-concept h2{
+    text-align: center;
+    padding:30px 0;
+}
+
+.sp-concept img{
+    padding-top:10%;
+}
+
+.sp-concept-text {
+    padding-top:7%;
+}
+
+.sp-concept-1{
+    columns: 2;
+    padding: 0 10px;
+}
+
+.sp-concept-1 h4{
+    font-size: large;
+}
+
+.sp-concept-1 p{
+    padding: 10px 0;
+    font-size: 0.7em;
+}
+
+.sp-concept-2{
+    columns: 2;
+    padding: 0 10px;
+}
+
+.sp-concept-2 h4{
+    font-size: large;
+}
+
+.sp-concept-2 p{
+    padding: 10px 0;
+    font-size: 0.7em;
+}
+
+.sp-concept-3{
+    columns: 2;
+    padding: 0 10px;
+}
+
+.sp-concept-3 h4{
+    font-size: large;
+}
+
+.sp-concept-3 p{
+    padding: 10px 0;
+    font-size: 0.7em;
+}
+
+.hrgreen {
+    margin: 25px 0;
+}
+
+.concept-end img{
+    margin-top: -80px;
+}
+
+.sp-checkpoint{
+    margin-top: 40px;
+}
+
+.sp-checkpoint h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.sp-checkpoint img{
+    width: 80%;
+    padding: 2% 10%;
+}
+
+.sp-checkpoint p{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sp-howto {
+    background-image: url(http://kasai.freecampus.co.jp/lp3/images/2-11sp.png);
+    background-size: cover;
+}
+
+.break{
+    height:1px;
+}
+
+.sp-howto-title{
+    font-size:25px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.sp-howto-subtitle{
+    font-size:0.3em;
+    text-align: center;
+    color: #504444;
+}
+
+.sp-howto-text {
+    text-align: center;
+    padding: 18px 0;
+}
+
+.howto-step{
+    width: 38%;
+    padding-top:20px;
+    padding-bottom: 90px;
+}
+
+.howto-step h2{
+    font-size:20px;
+    padding: 17px 0;
+}
+
+.howto-step p {
+    font-size:0.8em;
+}
+
+.right-text {
+    padding-left:60%;
+}
+
+.left-text {
+    padding-left:2%;
+}
+
+.sp-customer-voice {
+    background-image: url(http://kasai.freecampus.co.jp/lp3/images/2-12sp.png);
+    background-size: cover;
+    padding: 55px 10px 50px 60px;
+    font-size: xx-small;
+}
+
+.sp-customer-voice-1 {
+    
+}
+
+
+
+
+
+.insurance-list{
+    background-color: #C9CECA;
+    padding: 50px 0;
+}
+
+.caution-title{
+    text-align: center;
+    margin: 50px;
+}
+
+.caution-title h1{
+    font-weight: 100;
+}
+
+.caution-detail{
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.corporate-info{
+    background-color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.red{
+    color:#973F04;
+}
+
+.green{
+    color:#6B7955;
+}
+
+.white {
+    color:#FFFFFF;
+}
+
+.logo{
+    width:50px;
+}
