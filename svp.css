@@ -188,7 +188,7 @@ body{
 
 .questiontitle {
   margin-top: 6vw;
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
   font-weight: 300;
   margin-bottom: 2vw;
@@ -208,9 +208,13 @@ h2:before {
   background: #04409A;
 }
 
+.FAQ3 h2:before {
+  top: calc(55% - 1px);
+}
+
 h2 span {
   position: relative;
-  padding: 0 0.5em;
+  padding: 0.5em 0.5em;
   background: #FAD256;
 }
 
@@ -221,21 +225,19 @@ h2 span {
 }
 
 .FAQquestion {
-  background-color: #04409A;
-  border-radius: 5px;
-  padding: 1vw 0;
   margin: 1vw 0;
 }
 .FAQquestion p{
   text-align: left;
   margin: 0 1.5vw;
+  font-size: 1.5vw;
 }
 
 .FAQanswer{
   margin-bottom:2vw;
 }
 .FAQanswer p {
-  margin: 0 1vw;
+  margin: 1vw 1vw;
   text-align: left;
 }
 
@@ -301,7 +303,7 @@ h2 span {
 
 .pc.pattern-container img{
   width: 80%;
-  margin: 1.5vw auto;
+  margin: 0.5vw auto;
 }
 
 .pc.pattern-container p{
@@ -320,7 +322,7 @@ h2 span {
 }
 
 .pattern-link img{
-  margin:2vw auto;
+  margin:2vw auto!important;
 }
 
 .textright{
@@ -354,6 +356,73 @@ h2 span {
 .backcorner{
   height:15vw;
 }
+
+
+/*アコーディオン*/
+.toggle {
+  display: none;
+}
+.option {
+  position: relative;
+  margin-bottom: 1em;
+}
+.title,
+.content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
+}
+.title {
+  background-color: #04409A;
+  border-radius: 5px;
+  display: block;
+  color: #04409A;
+  font-weight: bold;
+  padding:1vw;
+}
+.title::after,
+.title::before {
+  content: "";
+  position: absolute;
+  right: 2.25vw;
+  bottom: 1.3vw;
+  width: 2px;
+  height: 0.5em;
+  color: #E4E3DE;
+  transition: all 0.3s;
+  transform: rotate(135deg);
+  border-bottom: solid 10px;
+}
+.title::after {
+  transform: rotate(-135deg);
+}
+.sp.title::after,
+.sp.title::before {
+  bottom:10px;
+  right:5vw;
+  width:3px; 
+  border-bottom: solid 11px;
+
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+}
+  .toggle:checked + .title + .content {
+  max-height: 500px;
+  transition: all 1.5s;
+  }
+
+.toggle:checked + .title::before {
+  transform: rotate(90deg) !important;
+}
+.toggle:checked + .title::after {
+  transform: rotate(-90deg) !important;
+  }
+/*アコーディオン_end*/
+
 
 
 
@@ -398,8 +467,31 @@ h2 span {
   margin: 15vw 5vw;
 }
 
+.sp.FAQtitle{
+  width: 35vw !important;
+  margin-bottom: -7vw;
+}
+
 .sp.FAQ-detail{
   width:90vw!important;
+}
+
+.sp.FAQ1, .sp.FAQ2, .sp.FAQ3 {
+  margin-top: 15vw;
+}
+
+.sp.FAQquestion{
+  margin: 5vw 0;
+}
+.sp.FAQquestion p{
+  margin:1.5vw 4vw;
+  font-size: 4.25vw;
+}
+
+.sp.questiontitle {
+  font-size: 5.5vw;
+  font-weight: 500;
+  line-height: 125%;
 }
 
 .sp.application{
@@ -407,6 +499,7 @@ h2 span {
   background-size: cover;
   padding-top: 57vw;
   padding-bottom:4vw;
+  max-height:327.762vw;
 }
 .sp.applicationtext{
   font-size: 2.6vw;
@@ -414,10 +507,8 @@ h2 span {
 }
 
 .sp.threepattern{
-  width:77vw;
   display:flex !important;
-  margin:3vw auto;
-  height:58vw;
+  margin:3vw 11vw;
 }
 
 .sp.threepattern div {
@@ -432,23 +523,43 @@ h2 span {
 }
 
 .sp.patterntext {
+  margin-top:32vw;
   margin-bottom:10vw;
   height: 7vw;
   font-size: 3vw;
   font-weight: 500;
 }
 
+.sp.pattern-link img{
+  margin:9vw auto 3vw auto;
+}
+.sp.pattern-link2 img{
+  margin:3vw auto;
+}
 .textsmall09{
   font-size:0.9em!important;
 }
 
+.patterntext_small {
+  font-size: min(2vw,750px);
+}
+
 .sp.threepattern2 {
-  margin-top: 86vw;
+  margin-top: 146vw;
+}
+.sp.patterntext2{
+  margin-top:-11vw;
+}
+.sp.patterntext2_img{
+  padding-top:2vw;
 }
 
 .sp.applicationtext_bottom {
-  margin: 25vw 5vw 0vw 5vw;
+  margin: 18vw 5vw 0vw 5vw;
   padding-bottom: 23vw;
+}
+.sp.applicationtext_bottom p{
+  font-size: 3.7vw;
 }
 
 .sp.applitationtext_caution{
@@ -459,6 +570,7 @@ h2 span {
 .sp.approvalnum{
   margin-top:5vw;
   padding-bottom:0!important;
+  font-weight:100;
 }
 
 .sp.linkbtn{
