@@ -3,29 +3,29 @@
     <head>
         <meta charset="utf-8">
         <title>SVP</title>
-        <link rel="stylesheet" href="svp.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/Users/masaaki/Documents/書類 - MasaakiのMacBook Air/cs/SVP_LP.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css" media="screen">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https: //fonts.googleapis.com/css2? family= Noto+Sans+JP:wght@400;700 & display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     </head>
     <body>
+    <div class="pc-wrapper">
         <div class="pc top">
             <div class="pc firstview">
                 <img class="pc firstview_icon" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fv02pc.png">
                 <img class="pc firstview_bgimg" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fvpc.png">
                 <p><b>カードでお買い物した商品と持ち物のトラブルを補償‼</b></p>
-                
             </div>
         </div>
         <div class="pc contents">
             <div class="pc contents1 bgblue">
                 <img class="pc contents1-title" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/45795pc.png">
-                <div class="pc contents1-carousel">
-                    <img class="pc contents1-A" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group335pc.png">
-                    
+                <div class="pc carousel"  data-flickity>
+                    <div class="pc carousel-cell"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group336pc.png"></div>
+                    <div class="pc carousel-cell"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group337pc.png"></div>
+                    <div class="pc carousel-cell"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group335pc.png"></div>
                 </div>
             </div>
             <div class="pc contents2">
@@ -33,27 +33,52 @@
             </div>
             <div class="pc contents3">
                 <img class="pc contents3img" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group338pc.png">
-                <p>上記支払保険金はお支払い事例です。実際の損害状況によって、お支払いする保険金は異なります。</p>
+                <p class="textblue">上記支払保険金はお支払い事例です。実際の損害状況によって、お支払いする保険金は異なります。</p>
             </div>
             <div class="pc contents4 bgblue">
                 <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group333pc.png">
             </div>
-        <div class="pc caution">
-            <img class="pc cautionimg" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group3395pc.png">
-        </div>
-        <div class="pc question">
-            <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/view6pc.png">
+            <div class="pc caution">
+                <img class="pc cautionimg" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group3395pc.png">
+            </div>
+            <div class="pc question">
+                <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/view6pc.png">
+            </div>
         </div>
         <div class="pc FAQ">
             <img class="pc FAQtitle" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/FAQpc.png">
             <div class="pc FAQ-detail">
                 <div class="pc FAQ1">
-                    <h2>セゾンカードで購入されたモノ</h2>
-                    <div class="pc FAQ1question">
+                    <h2 class="questiontitle textblue"><span>セゾンカードで購入されたモノ</span></h2>
+                    <div class="pc FAQquestion">
                         <p class="textwhite">破損や盗難時に、新品の値段で補償してくれるのですか？</p>
                     </div>
-                    <div class="pc FAQ1answer">
+                    <div class="pc FAQanswer">
                         <p class="textblue">購入時の価格から、使用年数に応じた消耗分を差し引いた時価額、もしくは修理金額のどちらか低い金額を補償します。盗難時は時価額でのお支払いとなります。お支払時に自己負担額を差し引きます。</p>
+                    </div>
+                </div>
+                <div class="pc FAQ2">
+                    <h2 class="questiontitle textblue"><span>外出時に身に着けているモノ</span></h2>
+                    <div class="pc FAQquestion">
+                        <p class="textwhite">電車にカバンを置き忘れたら盗まれてしまいました。補償されますか？</p>
+                    </div>
+                    <div class="pc FAQanswer">
+                        <p class="textblue">紛失・置き忘れたモノを盗まれた場合は補償されません。</p>
+                    </div>
+                    <div class="pc FAQquestion">
+                        <p class="textwhite">同居の家族の所有物は補償されますか？</p>
+                    </div>
+                    <div class="pc FAQanswer">
+                        <p class="textblue">セゾンカード会員様が持ち出した同居のご家族の所有物は補償されます。同居のご家族が持ち出したモノは、補償されません。</p>
+                    </div>
+                </div>
+                <div class="pc FAQ3">
+                    <h2 class="questiontitle textblue"><span class="textsmall07">セゾンカードで購入されたモノ・外出時に身につけているモノ</span></h2>
+                    <div class="pc FAQquestion">
+                        <p class="textwhite">破自宅内で破損しても補償されますか？</p>
+                    </div>
+                    <div class="pc FAQanswer">
+                        <p class="textblue">セゾンカードで購入した商品のみ補償されます。携行品の補償については、居住している住宅外において身につけているモノ、移動を共にするモノが対象となるため、ご自宅での破損は補償されません。</p>
                     </div>
                 </div>
             </div>
@@ -61,10 +86,10 @@
         <div class="pc application">
             <img class="pc applicationname" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group344pc.png">
             <img class="pc applicationtitle" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group3441pc.png">
-            <p class="textwhite"><span class="textlarge">セゾンカード</span>はお持ちですか？お持ちの場合と、お持ちでない場合で申し込みの流れが異なります。</p>
+            <p class="pc textwhite applicationtext"><span class="textlarge">セゾンカード</span>はお持ちですか？お持ちの場合と、お持ちでない場合で申し込みの流れが異なります。</p>
             <div class="pc threepattern">
                 <div class="pc patternhave">
-                    <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group340pc.png">
+                    <img class="pc patterntitle" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group340pc.png">
                     <div class="pc pattern-container">
                         <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group50pc.png">
                         <p class="patterntext">必要事項を記載し<br>お申し込みください</p>
@@ -73,51 +98,183 @@
                     </div>
                 </div>
                 <div class="pc patternnothave">
-                    <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group341pc.png">
+                    <img class="pc patterntitle" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group341pc.png">
                     <div class="pc pattern-container">
                         <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/WinnerIsometric3pc.png">
                         <p class="patterntext">カードお申し込み<br>
-                            （年会費無料）と<br>
-                            同時にお申し込みください</p>
-                        <a class="pattern-link" href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group82pc.png"></a>
-                            <p class="textsmall">※サービス入力画面で「Super Value Plus お買物安心プラン充実コース【Y】」にチェックしてください。</p>
+                            （年会費無料）と同時にお申し込みください</p>
+                            <a class="pattern-link" href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group82pc.png"></a>
+                            <p class="textsmall07">※サービス入力画面で「Super Value Plus お買物安心プラン充実コース【Y】」にチェックしてください。</p>
+                        </div>
                     </div>
-                </div>
-                <div class="pc patterntoknow">
-                    <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group342pc.png">
-                    <div class="pc pattern-container">
-                        <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group3752pc.png">
-                        <p class="patterntext">詳しい内容を<br>
+                    <div class="pc patterntoknow">
+                        <img class="pc patterntitle" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group342pc.png">
+                        <div class="pc pattern-container">
+                            <img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group3752pc.png">
+                            <p class="patterntext">詳しい内容を<br>
                             知りたい方は<br>
                             資料をご請求ください</p>
-                        <a class="pattern-link" href="#"><img  class="pc"src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group34pc.png"></a>
-
+                            <a class="pattern-link" href="#"><img  class="pc"src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group34pc.png"></a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="pc applicationtext">
+                    <p class="textwhite">※それぞれお申し込みページにリンクいたします。</p>
+                    <p class="textwhite"><small>
+                        ※UCカード会員様はお申し込みいただけません。<br>
+                        ※一部お申し込みいただけないカードがございます。<br>
+                        取扱代理店：株式会社クレディセゾン 引受保険会社：セゾン自動車火災保険株式会社（幹事会社）、損害保険ジャパン株式会社</small></p>
+                        <p class="approvalnum textright textwhite"><small>SA2022-1070(2022.9)</small></p>
+                    </div>
+        </div>
+                <div class="pc flexcorner">
+                    <div class="pc linkbtn">
+                        <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
+                        <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
+                        <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
                     </div>
                 </div>
-              
+                <div class="pc backcorner">
+                    <div class="pc linkbtn">
+                        <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
+                        <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
+                        <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
+                    </div>
+                </div>
             </div>
-            <div class="pc applicationtext">
-                <p class="textwhite">※それぞれお申し込みページにリンクいたします。</p>
-                <p class="textwhite"><small>
-                    ※UCカード会員様はお申し込みいただけません。<br>
-                    ※一部お申し込みいただけないカードがございます。<br>
-                    取扱代理店：株式会社クレディセゾン 引受保険会社：セゾン自動車火災保険株式会社（幹事会社）、損害保険ジャパン株式会社</small></p>
-            <p class="approvalnum textright textwhite"><small>SA2022-1070(2022.9)</small></p>
+
+
+
+            <div class="sp-wrapper">
+                <div class="sp top">
+                    <div class="sp firstview">
+                        <img class="sp firstview_icon" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32750sp.png">
+                        <img class="sp firstview_bgimg" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32749sp.png">
+                        <p>カードでお買い物した商品と<br>持ち物のトラブルを補償‼</p>
+                        <img class="sp firstview_mascleicon" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/j28561sp.png">
+                    </div>
+                </div>
+                <div class="sp contents">
+                    <div class="sp contents1 bgblue">
+                        <img class="sp contents1-title" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32751sp.png">
+                        <div class="sp carousel"  data-flickity>
+                            <div class="sp carousel-cell"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group336pc.png"></div>
+                            <div class="sp carousel-cell"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group337pc.png"></div>
+                            <div class="sp carousel-cell"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group335pc.png"></div>
+                        </div>
+                    </div>
+                    <div class="sp contents2">
+                        <img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32752sp.png">
+                    </div>
+                    <div class="sp contents3">
+                        <img class="sp contents3img" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32753sp.png">
+                        <p class="textblue">上記支払保険金はお支払い事例です。<br>実際の損害状況によって、お支払いする保険金は異なります。</p>
+                    </div>
+                    <div class="sp contents4 bgblue">
+                        <img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32755sp.png">
+                    </div>
+                    <div class="sp caution">
+                        <img class="sp cautionimg" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32757sp.png">
+                    </div>
+                    <div class="sp question">
+                        <img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group180sp.png">
+                    </div>
+                </div>
+                <div class="sp FAQ">
+                    <img class="sp FAQtitle" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/FAQpc.png">
+                    <div class="sp FAQ-detail">
+                        <div class="sp FAQ1">
+                            <h2 class="questiontitle textblue"><span>セゾンカードで購入されたモノ</span></h2>
+                            <div class="sp FAQquestion">
+                                <p class="textwhite">破損や盗難時に、新品の値段で補償してくれるのですか？</p>
+                            </div>
+                            <div class="sp FAQanswer">
+                                <p class="textblue">購入時の価格から、使用年数に応じた消耗分を差し引いた時価額、もしくは修理金額のどちらか低い金額を補償します。盗難時は時価額でのお支払いとなります。お支払時に自己負担額を差し引きます。</p>
+                            </div>
+                        </div>
+                        <div class="sp FAQ2">
+                            <h2 class="questiontitle textblue"><span>外出時に身に着けているモノ</span></h2>
+                            <div class="sp FAQquestion">
+                                <p class="textwhite">電車にカバンを置き忘れたら盗まれてしまいました。補償されますか？</p>
+                            </div>
+                            <div class="sp FAQanswer">
+                                <p class="textblue">紛失・置き忘れたモノを盗まれた場合は補償されません。</p>
+                            </div>
+                            <div class="sp FAQquestion">
+                                <p class="textwhite">同居の家族の所有物は補償されますか？</p>
+                            </div>
+                            <div class="sp FAQanswer">
+                                <p class="textblue">セゾンカード会員様が持ち出した同居のご家族の所有物は補償されます。同居のご家族が持ち出したモノは、補償されません。</p>
+                            </div>
+                        </div>
+                        <div class="sp FAQ3">
+                            <h2 class="questiontitle textblue"><span class="textsmall09">セゾンカードで購入されたモノ・外出時に身につけているモノ</span></h2>
+                            <div class="sp FAQquestion">
+                                <p class="textwhite">破自宅内で破損しても補償されますか？</p>
+                            </div>
+                            <div class="sp FAQanswer">
+                                <p class="textblue">セゾンカードで購入した商品のみ補償されます。携行品の補償については、居住している住宅外において身につけているモノ、移動を共にするモノが対象となるため、ご自宅での破損は補償されません。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp application">
+                    <p class="sp textwhite applicationtext"><span class="textlarge">セゾンカード</span>はお持ちですか？<br>お持ちの場合と、お持ちでない場合で申し込みの流れが異なります。</p>
+                    <div class="sp threepattern">
+                        <div class="sp patternhave">
+                            <div class="sp pattern-container">
+                                <p class="sp patterntext">必要事項を記載し<br>お申し込みください</p>
+                                <a class="sp pattern-link" href="#"><img  class="sp"src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group87pc.png"></a>
+                                <a class="sp pattern-link" href="#"><img  class="sp"src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group32pc.png"></a>
+                            </div>
+                        </div>
+                        <div class="sp patternnothave">
+                            <div class="sp pattern-container">
+                                <p class="sp patterntext">カードお申し込み<br>
+                                    (年会費無料)と同時にお申し込みください</p>
+                                    <a class="sp pattern-link" href="#"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group82pc.png"></a>
+                                    <p class="sp textsmall09">※サービス入力画面で「Super Value Plus お買物安心プラン充実コース【Y】」にチェックしてください。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp threepattern2">
+                            <div class="sp patterntoknow">
+                                <div class="sp pattern-container">
+                                    <p class="sp patterntext">詳しい内容を<br>
+                                        知りたい方は<br>
+                                        資料をご請求ください</p>
+                                        <a class="sp pattern-link" href="#"><img  class="sp"src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group34pc.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                                
+                        <div class="sp applicationtext_bottom">
+                            <p class="sp textwhite"><large>※それぞれお申し込みページにリンクいたします。</large></p>
+                            <p class="sp textwhite textsmall09 applitationtext_caution">
+                                ※UCカード会員様はお申し込みいただけません。<br>
+                                ※一部お申し込みいただけないカードがございます。<br>
+                                取扱代理店：株式会社クレディセゾン 引受保険会社：セゾン自動車火災保険株式会社（幹事会社）、損害保険ジャパン株式会社</small></p>
+                                <p class="sp approvalnum textright textwhite textsmall07">SA2022-1070(2022.9)</p>
+                            </div>
+                </div>
+                        <div class="sp flexcorner">
+                            <div class="sp linkbtn">
+                                <a href="#"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
+                                <a href="#"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
+                                <a href="#"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
+                            </div>
+                        </div>
+                        <div class="sp backcorner">
+                            <div class="sp linkbtn">
+                                <a href=""><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
+                                <a href=""><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
+                                <a href=""><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
+                            </div>
+                        </div>
+                    </div>
             </div>
-        </div>
-        <div class="pc flexcorner">
-            <div class="pc linkbtn">
-                <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
-                <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
-                <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
-            </div>
-        </div>
-        <div class="pc backcorner">
-            <div class="pc linkbtn">
-                <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
-                <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
-                <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
-            </div>
-        </div>
-    </body>
+            <script src="/Users/masaaki/Documents/書類 - MasaakiのMacBook Air/cs/SVP_LP.js"></script>
+        </body>
 </html>
