@@ -63,6 +63,10 @@ body{
       width: 100% !important;*/ }
 }
 
+.top{
+  padding-top:5vw;
+}
+
 .firstview{
   position: relative;
 }
@@ -297,7 +301,7 @@ h2 span {
 
 .pc.pattern-container img{
   width: 80%;
-  margin: auto;
+  margin: 1.5vw auto;
 }
 
 .pc.pattern-container p{
@@ -332,8 +336,9 @@ h2 span {
   position:fixed;
   bottom:0;
   z-index: 10;
+  opacity:0;
   background-color: #FAD256;
-
+  transition:all 0.5s;
 }
 
 .linkbtn {
@@ -346,6 +351,9 @@ h2 span {
   margin: 20px 10px;
 }
 
+.backcorner{
+  height:15vw;
+}
 
 
 
@@ -398,6 +406,7 @@ h2 span {
   background-image: url(http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group3332sp.png);
   background-size: cover;
   padding-top: 57vw;
+  padding-bottom:4vw;
 }
 .sp.applicationtext{
   font-size: 2.6vw;
@@ -450,4 +459,18 @@ h2 span {
 .sp.approvalnum{
   margin-top:5vw;
   padding-bottom:0!important;
+}
+
+.sp.linkbtn{
+  width:100vw;
+  
+}
+
+.sp.linkbtn img{
+  margin: 2vw 1.3vw;
+  width: 31vw;
+}
+
+.sp.backcorner{
+  height:20vw;
 }
