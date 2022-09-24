@@ -8,10 +8,14 @@ h1, h2, h3, h4, h5, h6, p, div {
 html{
   scroll-behavior: smooth;
 }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-div{
+.firstview_icon{
     animation-name:fade;
-    animation-duration: 3s;
+    animation-duration: 5s;
 }
 
 @keyframes fade{
@@ -29,6 +33,7 @@ a {
 
 p{
   text-align: center;
+  font-weight: 400;
 }
 
 body{
@@ -54,15 +59,12 @@ body{
   .sp { display: block !important; 
       max-width: 100%;
       align-items: center;
-      margin-left: 0% !important;
-      width: 100% !important; }   
-  .quote-btn {
-      margin: 20px 0 !important;
-  }
-  .float-btn img,.quote-btn img{
-      width: 66.6% !important;
-      margin: auto !important;
-  }
+      /*margin-left: 0% !important;
+      width: 100% !important;*/ }
+}
+
+.firstview{
+  position: relative;
 }
 
 .firstview_icon{
@@ -73,14 +75,17 @@ body{
 
 .firstview p{
   margin: 5vw;
-  font-size: medium;
+  font-size: 2.5vw;
+  color:#525252;
+  padding-bottom:3vw;
 }
 
-.contents1{
+.pc.contents1{
   padding-top:5vw;
+  height: 48vw;
 }
 
-.contents1-title{
+.pc.contents1-title{
   margin:5px auto;
   width:45vw;
 }
@@ -89,14 +94,78 @@ body{
   background-color: #04409A;
 }
 
-.contents1-carousel{
-  padding:5vw;
-  width:90vw;
+
+
+
+
+
+
+
+
+.carousel-cell {
+  width: 100%;
+  height: 50vw;
+  padding:0 5vw;
 }
+
+.flickity-viewport{
+  height: 28vw !important;
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+
+
+
+
+
 
 .contents3{
   margin:10vw 0;
   width:90vw;
+}
+
+.pc.contents3 p {
+  font-size: 1.3vw;
+  text-align: left;
+  margin-left: 19vw;
+  margin-top: 1vw;
 }
 
 .cautionimg{
@@ -105,17 +174,75 @@ body{
 
 }
 
+.FAQ {
+  margin: 10vw auto 20vw auto;
+}
+
 .question{
   margin: 5vw 0;
 }
 
+.questiontitle {
+  margin-top: 6vw;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 2vw;
+}
+
+h2 {
+  position: relative;
+}
+
+h2:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: #04409A;
+}
+
+h2 span {
+  position: relative;
+  padding: 0 0.5em;
+  background: #FAD256;
+}
+
+
 .FAQtitle{
-  width:20vw;
+  width: 20vw!important;
   margin:auto;
 }
 
+.FAQquestion {
+  background-color: #04409A;
+  border-radius: 5px;
+  padding: 1vw 0;
+  margin: 1vw 0;
+}
+.FAQquestion p{
+  text-align: left;
+  margin: 0 1.5vw;
+}
+
+.FAQanswer{
+  margin-bottom:2vw;
+}
+.FAQanswer p {
+  margin: 0 1vw;
+  text-align: left;
+}
+
+.FAQ-detail {
+  width: 70vw;
+  margin: auto;
+  padding-bottom: 10vw;
+}
+
 .textlarge{
-  font-size: large;
+  font-size:2em;
 }
 
 .application{
@@ -134,28 +261,32 @@ body{
   width: 62vw;
 }
 
-.applicationtext p{
-  margin-top:7vw;
+.applicationtext{
+  font-size: 1.3vw;
 }
 
-.threepattern{
+.applicationtext p{
+  margin-top:4vw;
+}
+
+.pc.threepattern{
   width:77vw;
   display:flex !important;
   margin:3vw auto;
   height:58vw;
 }
 
-.threepattern div{
+.pc.threepattern div{
   flex:auto;
   width: 23vw;
-  height: 46vw;
+  height: 52vw;
 }
 
-.threepattern p{
+.threepattern p,.threepattern2 p{
   color: #032A64;
 }
 
-.pattern-container{
+.pc.pattern-container{
   background-color: #B1B1B1;
   
 }
@@ -164,21 +295,28 @@ body{
   width:23vw;
 }
 
-.pattern-container img,.pattern-container p{
+.pc.pattern-container img{
   width: 80%;
   margin: auto;
 }
 
-.patterntext {
+.pc.pattern-container p{
+  width: 80%;
+  margin: auto;
+  height: 8vw;
+  font-size: 1.8vw;
+}
+
+.pc.patterntext {
   height: 5vw;
 }
 
-.textsmall{
-  font-size:0.8em !important ;
+.textsmall07{
+  font-size:0.7em !important ;
 }
 
 .pattern-link img{
-  margin:1.5vw auto;
+  margin:2vw auto;
 }
 
 .textright{
@@ -206,4 +344,110 @@ body{
 
 .linkbtn img {
   margin: 20px 10px;
+}
+
+
+
+
+.sp.firstview_icon {
+  position: absolute;
+  margin-top: 79vw;
+  width: 85vw !important;
+  margin-left: 10vw!important;
+}
+
+.sp.firstview p {
+  margin: 11vw auto 0vw auto;
+  font-size: 4vw;
+  color: #525252;
+  font-weight: 600;
+}
+
+.firstview_mascleicon {
+  width: 20vw!important;
+  margin: 3vw auto;
+  padding-bottom: 3vw;
+}
+
+.sp.contents1 {
+  padding-bottom: 10vw;
+}
+
+.sp.contents3img {
+  margin-left: 3vw;
+  width: 90vw!important;
+}
+
+.sp.contents3 p {
+  font-size: 2vw;
+  text-align: left;
+  margin-left: 27vw;
+  margin-top: -4.5vw;
+}
+
+.sp.cautionimg{
+  width:90vw !important;
+  margin: 15vw 5vw;
+}
+
+.sp.FAQ-detail{
+  width:90vw!important;
+}
+
+.sp.application{
+  background-image: url(http://www.financial-agency.com/service/wp-content/uploads/2022/09/Group3332sp.png);
+  background-size: cover;
+  padding-top: 57vw;
+}
+.sp.applicationtext{
+  font-size: 2.6vw;
+  font-weight: 200;
+}
+
+.sp.threepattern{
+  width:77vw;
+  display:flex !important;
+  margin:3vw auto;
+  height:58vw;
+}
+
+.sp.threepattern div {
+  flex: auto;
+  width: 30vw;
+  height: 0vw;
+  margin: 10vw 12vw 0 1vw;
+}
+
+.sp.pattern-container img{
+  width:30vw;
+}
+
+.sp.patterntext {
+  margin-bottom:10vw;
+  height: 7vw;
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.textsmall09{
+  font-size:0.9em!important;
+}
+
+.sp.threepattern2 {
+  margin-top: 86vw;
+}
+
+.sp.applicationtext_bottom {
+  margin: 25vw 5vw 0vw 5vw;
+  padding-bottom: 23vw;
+}
+
+.sp.applitationtext_caution{
+  margin-top:5vw;
+  font-weight: 100;
+}
+
+.sp.approvalnum{
+  margin-top:5vw;
+  padding-bottom:0!important;
 }
