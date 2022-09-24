@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>SVP</title>
-        <link rel="stylesheet" href="svp.css">
+        <link rel="stylesheet" href="svp_lp.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css" media="screen">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https: //fonts.googleapis.com/css2? family= Noto+Sans+JP:wght@400;700 & display=swap" rel="stylesheet">
@@ -129,7 +129,15 @@
                         <p class="approvalnum textright textwhite"><small>SA2022-1070(2022.9)</small></p>
                     </div>
         </div>
-                <div class="pc flexcorner">
+        <script>  window.addEventListener("scroll", function () {
+            const topBtn = document.getElementById("pcflexcorner");
+            const scroll = window.pageYOffset;
+            if (scroll > 500) {
+              topBtn.style.opacity = 1;
+            } else topBtn.style.opacity = 0; 
+          });
+          </script>
+                <div class="pc flexcorner" id="pcflexcorner">
                     <div class="pc linkbtn">
                         <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
                         <a href="#"><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
@@ -137,10 +145,6 @@
                     </div>
                 </div>
                 <div class="pc backcorner">
-                    <div class="pc linkbtn">
-                        <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
-                        <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
-                        <a href=""><img class="pc" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
                     </div>
                 </div>
             </div>
@@ -259,7 +263,15 @@
                                 <p class="sp approvalnum textright textwhite textsmall07">SA2022-1070(2022.9)</p>
                             </div>
                 </div>
-                        <div class="sp flexcorner">
+                <script>  window.addEventListener("scroll", function () {
+                    const topBtn = document.getElementById("spflexcorner");
+                    const scroll = window.pageYOffset;
+                    if (scroll > 500) {
+                      topBtn.style.opacity = 1;
+                    } else topBtn.style.opacity = 0; 
+                  });
+                  </script>
+                        <div class="sp flexcorner" id="spflexcorner">
                             <div class="sp linkbtn">
                                 <a href="#"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
                                 <a href="#"><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
@@ -267,10 +279,6 @@
                             </div>
                         </div>
                         <div class="sp backcorner">
-                            <div class="sp linkbtn">
-                                <a href=""><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab02pc.png"></a>
-                                <a href=""><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab03pc.png"></a>
-                                <a href=""><img class="sp" src="http://www.financial-agency.com/service/wp-content/uploads/2022/09/fab01pc.png"></a>
                             </div>
                         </div>
                     </div>
